@@ -1,0 +1,63 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 1.3rem;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 0;
+    border-bottom: 1px solid #666 ;
+    background-color: #eee;
+    
+  li {
+    margin: 0;
+    padding: 0;
+    border-left: 1px solid #dbdbdb;
+  }
+
+  a {
+    padding: 15px 20px;
+    display: block;
+    text-decoration: none;
+    color: #003c80;
+    size: 5.5rem;
+    font-weight: normal;
+    text-shadow: 1px 1px #ccc;
+    transition: background-color 0.5s ease;
+
+    &:hover {
+      color: #002b5c;
+      background-color: #d3d3d3;
+    }
+  }
+}
+
+.container {
+  width: 100vw;
+  height: calc(100vh - 60px); 
+  margin: 0 auto;
+
+  &.about-page {
+    width: 80vw;
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-weight: normal;
+    font-size: 2rem;
+    margin: 20px 0;
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
+
+  &.hacker-load, &.hacker-no-news {
+    text-align: center;
+    margin-top: 50px;
+  }
+}
